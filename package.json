@@ -1,0 +1,63 @@
+{
+	"name": "bmaplib.markertool",
+	"version": "0.0.2",
+	"description": "A plugin library of Baidu Map JS API",
+	"main": "dist/index.js",
+	"files": [
+		"dist/*.js"
+	],
+	"scripts": {
+		"build": "rollup --config build/rollup.config.js",
+		"lint": "eslint src/**/*.js",
+		"prettify": "prettier --write src/**/*.js",
+		"test": "npm run lint && nyc ava",
+		"cover:report": "nyc report --reporter=text-lcov > coverage.lcov",
+		"lint-staged": "lint-staged",
+		"commit-lint": "commitlint -E HUSKY_GIT_PARAMS"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/VicSolWang/bmaplib.markertool.git"
+	},
+	"keywords": [
+		"baidu-map",
+		"BMapLib",
+		"MarkerTool"
+	],
+	"author": "VicSolWang",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/VicSolWang/bmaplib.markertool/issues"
+	},
+	"homepage": "https://github.com/VicSolWang/bmaplib.markertool#readme",
+	"devDependencies": {
+		"@ava/babel": "^1.0.1",
+		"@babel/core": "^7.10.5",
+		"@babel/plugin-transform-runtime": "^7.10.5",
+		"@babel/preset-env": "^7.10.4",
+		"@babel/runtime": "^7.10.5",
+		"@babel/runtime-corejs3": "^7.10.5",
+		"@commitlint/cli": "^9.1.1",
+		"@commitlint/config-conventional": "^9.1.1",
+		"@rollup/plugin-babel": "^5.1.0",
+		"@rollup/plugin-commonjs": "^14.0.0",
+		"@rollup/plugin-node-resolve": "^8.4.0",
+		"@rollup/plugin-replace": "^2.3.3",
+		"ava": "^3.10.1",
+		"core-js": "^3.6.5",
+		"eslint-config-wzx": "^0.1.8",
+		"fs-extra": "^9.0.1",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.11",
+		"nyc": "^15.1.0",
+		"prettier": "^2.0.5",
+		"rollup": "^2.21.0",
+		"rollup-plugin-delete": "^2.0.0",
+		"rollup-plugin-postcss": "^3.1.3",
+		"rollup-plugin-uglify": "^6.0.4",
+		"shelljs": "^0.8.4"
+	},
+	"ava": {
+		"babel": true
+	}
+}

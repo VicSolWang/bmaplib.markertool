@@ -1,0 +1,25 @@
+{
+	"extends": "eslint-config-wzx",
+	"globals": {
+		"baidu": true,
+		"BMap": true,
+		"BMapLib": true,
+		"BMAP_ANCHOR_TOP_LEFT": true
+	},
+	"rules": {
+		"consistent-return": "off",
+		"dot-notation": "off",
+		"eqeqeq": "off",
+		"guard-for-in": "off",
+		"no-lonely-if": "off",
+		"no-multi-assign": "off",
+		"no-plusplus": "off",
+		"no-prototype-builtins": "off",
+		"no-unused-expressions": "off",
+		"no-use-before-define": "off",
+		"no-var": "off",
+		"prefer-rest-params": "off",
+		"prefer-spread": "off",
+		"vars-on-top": "off"
+	}
+}
