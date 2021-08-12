@@ -8,6 +8,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
+import image from '@rollup/plugin-image';
 import { uglify } from 'rollup-plugin-uglify';
 import postcss from 'rollup-plugin-postcss';
 import del from 'rollup-plugin-delete';
@@ -33,6 +34,7 @@ export default {
 		replace({
 			'use strict': '',
 		}),
+		image(),
 		uglify(),
 		postcss({
 			extract: path.resolve(__dirname, '../dist/style.css'),

@@ -1,6 +1,6 @@
 {
 	"name": "bmaplib.markertool",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A plugin library of Baidu Map JS API",
 	"main": "dist/index.js",
 	"files": [
@@ -43,6 +43,7 @@
 		"@rollup/plugin-commonjs": "^14.0.0",
 		"@rollup/plugin-node-resolve": "^8.4.0",
 		"@rollup/plugin-replace": "^2.3.3",
+		"@rollup/plugin-image": "^2.1.0",
 		"ava": "^3.10.1",
 		"core-js": "^3.6.5",
 		"eslint-config-wzx": "^0.1.8",

@@ -3,6 +3,8 @@
  * Date: 2020-07-14 17:24
  * Email: vic.sol.wang@gmail.com
  */
+import CUR_IMG from './images/transparent.png';
+import ICON_IMG from './images/us_mk_icon.png';
 
 /**
  * @fileoverview 百度地图的添加标注工具类，对外开放。
@@ -363,8 +365,8 @@ MarkerTool.prototype._initialize = function (map, opts) {
 	};
 	baidu.extend(this._opts, opts); // 用户设定参数覆盖默认设定参数
 
-	MarkerTool.CUR_IMG =		'http://api.map.baidu.com/library/MarkerTool/1.2/src/images/transparent.cur'; // 鼠标透明样式，发布时候修改为绝对路径
-	MarkerTool.ICON_IMG =		'http://api.map.baidu.com/library/MarkerTool/1.2/src/images/us_mk_icon.png'; // 图标样式，发布时候修改为绝对路径
+	MarkerTool.CUR_IMG = CUR_IMG; // 鼠标透明样式，发布时候修改为绝对路径
+	MarkerTool.ICON_IMG = ICON_IMG; // 图标样式，发布时候修改为绝对路径
 	MarkerTool.SYS_ICONS = [
 		// MarkerTool 提供的系统样式，便于用户选择使用
 		new BMap.Icon(MarkerTool.ICON_IMG, new BMap.Size(21, 21), {
