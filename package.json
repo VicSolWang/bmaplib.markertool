@@ -1,6 +1,6 @@
 {
 	"name": "bmaplib.markertool",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A plugin library of Baidu Map JS API",
 	"main": "dist/index.js",
 	"files": [

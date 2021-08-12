@@ -508,8 +508,12 @@ MarkerTool.prototype.open = function () {
 	}
 	// 初始化跟随Label
 	if (!this._followLabel) {
+		const followMarkerSize =			(this._followMarker.getIcon() || {}).size || {};
 		this._followLabel = new BMap.Label(this._opts.followText, {
-			offset: new BMap.Size(20, 20),
+			offset: new BMap.Size(
+				followMarkerSize.width || 20,
+				followMarkerSize.height || 20,
+			),
 		});
 		if (this._opts.followOptions) {
 			this._followLabel.setStyle(this._opts.followOptions);
